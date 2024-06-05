@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 namespace ProyectoApi.Models
 {
     public class Horario
+
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]

@@ -38,6 +38,7 @@ namespace ServiceHorario.Servicios
             return await _horario.Find(horario => (horario.Id == objectId.ToString())).FirstOrDefaultAsync();
         }
        
+
         public async Task<Horario> GetHorarioAsync(string idMedico, DateTime dia, string hora)
         {
             return await _horario.Find(horario => horario.IdMedico == idMedico && horario.dia.Date == dia.Date && horario.hora == hora).FirstOrDefaultAsync();

@@ -147,8 +147,7 @@ namespace ProyectoApi.Controllers
                     return NotFound("No se encontró el horario.");
                 }
 
-               
-               
+    
 
                 // Guardar la cita actualizada
                 await _horarioService.EliminarHorarioAsync(horarioExistente);
